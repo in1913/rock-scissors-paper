@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보게임</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gamenpc">
+            <img src="images/rsk.jpeg" alt="npc">
+            <h1 id="playgame">가위바위보 한 판 하시죠!</h1>
+        </div>
+        <div class="rps">
+            <div class="me" id="me">
+                <img id="user-img" src="images/paper.png" alt="보">
+                <p id="rps">나</p>
+                <div class="competition"></div>
+            </div>
+            <div class="com" id="com">
+                <img id="com-img" src="images/rock.png" alt="바위">
+                <p id="crps">컴</p>
+                <div class="competition"></div>
+            </div>
+        </div>
+        <div class="btnbox">
+            <div class="scissors"></div>
+            <div class="rock"></div>
+            <div class="paper"></div>
+            <img src="images/sis.png" alt="가위" id="scissors" onclick="rps(0)">
+            <img src="images/rock.png" alt="바위" id="rock" onclick="rps(1)">
+            <img src="images/paper.png" alt="보" id="paper" onclick="rps(2)">
+            <h1 class="tt">선택하세요.</h1>
+        </div>
+        <div class="popup-nowin" style="display: none;">
+            <p>
+                비겼어요. <br>
+                다시 도전하세요!
+            </p>
+        </div>
+        <div class="popup-fail" style="display: none;">
+            <p>
+                졌어요. <br>
+                다시 도전하세요!
+            </p>
+        </div>
+        <div class="popup-win" style="display: none;">
+            <p>
+                이겼어요! <br>
+                축하합니다!
+            </p>
+        </div>
+    </div>
+    
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="cordova.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
